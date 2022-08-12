@@ -8,7 +8,6 @@
 }
 .container{
     width: 100%;
-    background: #f2f2f2;
 }
 header{
     width: 1440px;
@@ -68,6 +67,7 @@ main{
     color: #fff;
 }
 .left-1 h1{
+    font-family: 'Fraunces', serif;
     font-weight: 900;
     font-size: 72px;
     width: 493px;
@@ -176,7 +176,7 @@ main{
 .specs-border p{
     text-align: center;
     position: relative;
-    left: 30px;
+    left: 20px;
     line-height: 26px;
     width: 255px;
 }
@@ -211,6 +211,9 @@ main{
     width: 760px;
     position: relative;
     top: 150px;
+}
+.work{
+    width: 255px;
 }
 .section-4__numbers{
     position: relative;
@@ -285,11 +288,128 @@ footer{
     align-items: center;
     width: 120px;
 }
-@media (max-width: 375px) {
-    body{
-        max-width: 375px;
-    }
+@media (max-width: 768px) {
     .container{
+        margin: 0 auto;
+        max-width: 768px;
+        width: 100%;
+        height: 3949px;
+    }
+    header{
+        align-items: center;
+        width: 689px;
+        margin: 0 auto;
+    }
+    .fa-bars::before{
+        display: none;
+    }
+    .right{
+        width: 60%;
+        align-items: center;
+    }
+    .section-1{
+        position: relative;
+        left: 5px;
+        width: 689px;
+        margin: 0 auto;
+        background-size: cover;
+    }
+    .left-1 p{
+        width: 398px;
+    }
+    .section-2{
+        position: relative;
+        top: 200px;
+        height: 927px;
+        width: 689px;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    .coffee{
+        display: flex;
+    }
+    .coffee-text p{
+        text-align: start;
+    }
+    .section-3{
+        width: 688px;
+        margin: 0 auto;
+        position: relative;
+        top: 400px;
+        left: 5px;
+    }
+    .specs{
+        width: 689px;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .specs-border{
+        position: relative;
+        left: 30px;
+        width: 573px;
+        margin: 30px;
+        text-align: left;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 180px;
+    }
+    .specs-text p{
+        width: 344px;
+        text-align: left;
+    }
+    .specs-text h3{
+        font-family: 'Fraunces' serif;
+        position: relative;
+        left: 20px;
+    }
+    .section-4{
+        top: 600px;
+        width: 689px;
+        margin: 0 auto;
+    }
+    .work{
+        position: relative;
+        left: 250px;
+        text-align: center;
+    }
+    .section-4__numbers{
+        position: relative;
+        left: 10px;
+        align-items: center;
+    }
+    .section-4__number{
+        width: 230px;
+        margin: 0 auto;
+    }
+    .section-4__number h3{
+        width: 223px;
+    }
+    .ovals{
+        margin: 0 auto;
+        width: 467px;
+    }
+    .path{
+        margin: 0 auto;
+        width: 467px;
+    }
+    footer{
+        width: 100%;
+    }
+    .footer__content{
+        padding: 10px;
+        position: relative;
+        top: 200px;
+        left: 20px;
+        width: 689px;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 375px) {
+    .container{
+        max-width: 375px;
         width: 100%;
     }
     header{
@@ -300,6 +420,11 @@ footer{
     }
     .right ul{
         display: none;
+    }
+    main{
+        margin: 0 auto;
+        max-width: 375px;
+        width: 100%;
     }
     .section-1{
         width: 327px;
@@ -327,12 +452,13 @@ footer{
     .section-2{
         position: relative;
         top: 200px;
-        width: 375px;
+        width: 327px;
         height: 1321px;
         flex-direction: column;
     }
     .coffee{
         margin: 20px 0;
+        display: block;
     }
     .section-3{
         position: relative;
@@ -351,6 +477,7 @@ footer{
         margin: 0 auto;
     }
     .specs{
+        width: 327px;
         position: relative;
         right: 30px;
         top: 100px;
@@ -365,6 +492,7 @@ footer{
         top: 100px;
         left: 45px;
         margin: 30px 0;
+        display: block;
     }
     .specs-border h2{
         margin: 0 auto;
@@ -373,12 +501,15 @@ footer{
     }
     .specs-border p{
         width: 212px;
-        position: relative;
-        right: 10px;
         font-size: 15px;
     }
+    .specs-text p{
+        text-align: center;
+    }
+    .specs-text h3{
+        left: 0;
+    }
     .section-4{
-
         text-align: center;
         margin: 0 auto;
         position: relative;
@@ -392,11 +523,12 @@ footer{
     .path{
         display: none;
     }
-    .work{
-        position: relative;
-        left: 80px;
+    .section-4 h3{
+        text-align: center;
     }
     .section-4__numbers{
+        width: 100%;
+        margin: 0 auto;
         flex-direction: column;
     }
     .section-4__number{
@@ -411,10 +543,6 @@ footer{
     .top{
         top: 20px;
     }
-    .left-2{
-        position: relative;
-        left: 40px;
-    }
     footer{
         position: relative;
         top: 600px;
@@ -428,9 +556,13 @@ footer{
         height: 346px;
     }
     .footer-links{
+        width: 327px;
+        margin: 0 auto;
         flex-direction: column;
     }
     .footer__links-1{
+        width: 327px;
+        margin: 0 auto;
         flex-direction: column;
     }
     .footer__links-1 a{

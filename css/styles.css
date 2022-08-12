@@ -415,6 +415,9 @@ footer{
     header{
         width: 327px;
     }
+    header i{
+        display: block;
+    }
     .left img{
         width: 140px;
     }
@@ -516,6 +519,10 @@ footer{
         top: 400px;
         height: 1116px;
         width: 327px;
+    }
+    .work{
+        left: 0;
+        position: relative;
     }
     .ovals{
         display: none;
